@@ -1,7 +1,7 @@
 package easy;
 
 /**
- * @Description :
+ * @Description :剑指 Offer 58 - II. 左旋转字符串
  * @Author : WenZhengcheng
  * @Date : create in 2021-08-22 下午 02:22
  * @Email : wenzhengcheng0223@163.com
