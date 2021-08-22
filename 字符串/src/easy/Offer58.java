@@ -31,5 +31,16 @@ public class Offer58 {
             }
             return stringBuilder.toString();
         }
+
+        /**
+         * 切片
+         * @param s
+         * @param n
+         * @return
+         */
+        public String reverseLeftWords1(String s, int n) {
+
+            return s.substring(n)+s.substring(0, n);
+        }
     }
 }
