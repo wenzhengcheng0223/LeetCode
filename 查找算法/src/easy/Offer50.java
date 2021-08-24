@@ -18,6 +18,7 @@ public class Offer50 {
         LinkedHashMap<Character, Boolean> map = new LinkedHashMap<>();
         for (char ch:s.toCharArray()){
             map.put(ch,!map.containsKey(ch));
+
         }
         for (Map.Entry<Character, Boolean> ch:map.entrySet())
         {
