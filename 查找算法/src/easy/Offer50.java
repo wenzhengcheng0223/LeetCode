@@ -19,6 +19,7 @@ public class Offer50 {
         for (char ch:s.toCharArray()){
             map.put(ch,!map.containsKey(ch));
 
+//test
         }
         for (Map.Entry<Character, Boolean> ch:map.entrySet())
         {
