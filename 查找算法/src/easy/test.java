@@ -12,7 +12,4 @@ package easy;
  */
 public class test {
 
-    public static void main(String[] args) {
-
-    }
 }
