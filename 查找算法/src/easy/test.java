@@ -11,5 +11,7 @@ package easy;
  * @Version : 1.0.0
  */
 public class test {
+    public static void main(String[] args) {
 
+    }
 }
