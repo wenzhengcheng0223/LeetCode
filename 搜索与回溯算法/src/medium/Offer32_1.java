@@ -32,7 +32,7 @@ public class Offer32_1 {
         if (root == null) {
             return new int[0];
         }
-        Queue<TreeNode> que = new LinkedList<>(){{add(root);}};
+        Queue<TreeNode> que = new LinkedList<TreeNode>(){{add(root);}};
         ArrayList<TreeNode> arr = new ArrayList<>();
         while (!que.isEmpty()){
             TreeNode node = que.poll();
