@@ -1,6 +1,9 @@
 package easy;
 
-import javax.swing.tree.TreeNode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @Description : 剑指 Offer 32 - I. 从上到下打印二叉树
@@ -14,12 +17,37 @@ import javax.swing.tree.TreeNode;
  * @Version : 1.0.0
  */
 
-
+/**
+ * Definition for a binary tree node.
+ * public class easy.TreeNode {
+ *     int val;
+ *     easy.TreeNode left;
+ *     easy.TreeNode right;
+ *     easy.TreeNode(int x) { val = x; }
+ * }
+ */
 public class Offer32_1 {
 
     public int[] levelOrder(TreeNode root) {
-
-
-        return null;
+        if (root == null) {
+            return new int[0];
+        }
+        Queue<TreeNode> que = new LinkedList<>(){{add(root);}};
+        ArrayList<TreeNode> arr = new ArrayList<>();
+        while (!que.isEmpty()){
+            TreeNode node = que.poll();
+            arr.add(node);
+            if (node.left != null){
+                que.add(node.left);
+            }
+            if (node.right != null){
+                que.add(node.right);
+            }
+        }
+        int[] ans = new int[arr.size()];
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = arr.get(i).val;
+        }
+        return ans;
     }
 }
