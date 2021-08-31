@@ -1,5 +1,3 @@
-package easy;
-
 /**
  * @Description :
  * @Author : WenZhengcheng
