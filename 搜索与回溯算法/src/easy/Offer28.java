@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @Description :
+ * @Description : 新增 剑指 Offer 28. 对称的二叉树 迭代法
  * @Author : WenZhengcheng
  * @Date : Create in 2021/9/6 下午 03:08
  * @Email : wenzhengcheng0223@163.com
